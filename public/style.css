@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 65%;
+}
+.chat_section{
+    width: 100%;
+}
+.logo{
+    width: 100%;
+    height: 5rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    padding: 0 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+img{
+    height: 2.5rem;
+    margin-right: 0.5rem;
+}
+h1{
+    color: black;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.message_area{
+    margin-top: 5rem;
+    width: 100%;
+    height:80vh;
+    color: rgb(18, 6, 24);
+    overflow-y: auto;
+    padding:5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.message{
+    position: relative;
+    margin: 0.5rem 0;
+    width: 50%;
+}
+.message h4{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(7, 118, 244);
+    background-color: rgba(6, 123, 241, 0.356);
+    border-radius: 5rem;
+    padding: 0.2rem 1rem;
+    font-size: 1.3rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.message p{
+    width: fit-content;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 5rem;
+    padding: 1rem 2rem;
+    margin-top: 0.3rem;
+    font-weight: 400;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.outgoing{
+    margin-left: auto;
+
+}
+.outgoing p{
+    margin-left: auto;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    border-top-right-radius: 0;
+    background-color: rgba(126, 10, 235, 0.888);
+}
+.outgoing h4{
+    margin-left: auto;
+    color: rgb(132, 18, 232);
+    background-color: rgba(142, 8, 231, 0.322);
+}
+
+.incoming p{
+    background-color: rgba(0, 115, 255, 0.879);
+}
+.input_area{
+    width: 100%;
+    height: 6rem;
+    padding: 0.8rem 5rem;
+    background-color: rgb(234, 234, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    border-radius: 5rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    outline: none;
+    border: none;
+}
+
+@media only screen and (max-width: 765px) {
+    .message_area{
+        height: 92vh;
+    }
+  }
